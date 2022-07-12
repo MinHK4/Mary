@@ -1,10 +1,16 @@
 import React from "react";
-import { View } from "react-native-web";
+import { TouchableOpacity, View, Text } from "react-native";
 
-const Intro = () => {
+
+const Intro = ({ navigation: { navigate } }) => {
   return(
     <View>
-      <Text>HI I'm Intro</Text>
+      <Text>HI I'm Int</Text>
+      <TouchableOpacity onPress={()=>navigate("EquipList")}>
+        <Text>
+          Go to EquipList
+        </Text>
+      </TouchableOpacity>
     </View>
   )
 }

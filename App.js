@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
 import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
+
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font'
 import { Ionicons } from '@expo/vector-icons';
 
-import Tabs from './navigation/Tabs';
 import Stacks from './navigation/Stack';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stacks/>
+      <StatusBar style="light" backgroundColor="rgba(0, 0, 0, 0.4)" />
     </NavigationContainer>
   );
 }
