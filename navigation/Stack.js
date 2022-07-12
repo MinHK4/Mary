@@ -28,6 +28,9 @@ const Stacks = () => {
       <Stack.Screen
         options={{
           title: '새 장비 대출',
+          headerStyle: {
+            backgroundColor: '#FFFBF8'
+          }
         }}
         name="NewEquip" component={NewEquip}/>
     </Stack.Navigator>
