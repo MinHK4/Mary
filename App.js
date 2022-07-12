@@ -5,6 +5,7 @@ import * as Font from 'expo-font'
 import { Ionicons } from '@expo/vector-icons';
 
 import Tabs from './navigation/Tabs';
+import Stacks from './navigation/Stack';
 
 export default function App() {
   const [loaded] = Font.useFonts(Ionicons.font)
@@ -14,16 +15,7 @@ export default function App() {
   
   return (
     <NavigationContainer>
-      <Tabs/>
+      <Stacks/>
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
