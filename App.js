@@ -17,7 +17,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stacks/>
-      <StatusBar style="light" backgroundColor="rgba(0, 0, 0, 0.4)" />
+      <StatusBar/>
     </NavigationContainer>
   );
 }
